@@ -1200,6 +1200,9 @@ a {
 .hello-iam {
   margin-bottom: 12px;
 }
+.hello-iam {
+  margin-top: 55px;   /* increase/decrease as needed */
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1280px) and (max-width: 1440px), only screen and (min-width: 1441px) {
   .hello-iam {
     font-size: 32px;
@@ -1279,6 +1282,9 @@ a {
   .hero-image {
     max-width: initial;
   }
+}
+.hero-image {
+  margin-top: 55px;   /* increase/decrease as needed */
 }
 
 .contact-spin svg {
@@ -2453,6 +2459,32 @@ textarea.contact-form-control {
    Desktop Navbar Styles
 ========================= */
 
+/* ===== NAVBAR BASE (LIGHT + DARK) ===== */
+.main-navbar .nav-link {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    padding: 8px 0;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #FFB646;
+    transition: width 0.3s ease;
+}
+.main-navbar ul {
+    gap: 40px;
+}
+
 /* Dark Navbar */
 #sticky-header {
     background: #0f172a;
@@ -2461,9 +2493,11 @@ textarea.contact-form-control {
 .main-navbar .nav-link {
     color: #e5e7eb;
 }
-
 .main-navbar .nav-link:hover {
     color: #FFB646;
+}
+.main-navbar .nav-link:hover::after {
+    width: 100%;
 }
 
 /* Toggle Button – DARK DEFAULT */
@@ -2500,7 +2534,7 @@ textarea.contact-form-control {
 .moon { opacity: 1; }
 
 /* Page */
-body {
+body.dark-mode {
   background-color: #0f172a;
   color: #e5e7eb;
 }
