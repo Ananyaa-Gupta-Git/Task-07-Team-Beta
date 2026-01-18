@@ -152,14 +152,6 @@ Potential improvements for future iterations:
 - **Footer Design**: Team member contribution
 - **Theme Integration**: Custom dual-theme system implementation
 
-## License
-
-[Add your license information here]
-
-## Contact
-
-[Add contact information here]
-
----
+## Author - Ananyaa Gupta
 
 **Note**: This project demonstrates a practical approach to implementing dual-theme websites while maintaining code consistency and user experience across different viewing preferences.
